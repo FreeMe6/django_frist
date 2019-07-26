@@ -76,7 +76,13 @@ WSGI_APPLICATION = 'django_frist.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
+# ref this url cn.
+# https://docs.djangoproject.com/zh-hans/2.2/intro/tutorial02/
+'''
+ENGINE -- 可选值有 'django.db.backends.sqlite3'，'django.db.backends.postgresql'，'django.db.backends.mysql'，或 'django.db.backends.oracle'。
+其它 https://docs.djangoproject.com/zh-hans/2.2/ref/databases/#third-party-notes
+NAME - 数据库的名称。如果使用的是 SQLite，数据库将是你电脑上的一个文件，在这种情况下， NAME 应该是此文件的绝对路径，包括文件名。默认值 os.path.join(BASE_DIR, 'db.sqlite3') 将会把数据库文件储存在项目的根目录
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
