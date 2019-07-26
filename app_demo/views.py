@@ -24,3 +24,6 @@ def hello(request):
 
 def msg(request,name,age):
     return HttpResponse('My name is' + name + ', i am '+ age + 'years old')
+# 编写第一个视图
+def index(request):
+    return HttpResponse("Hello, world, You're at the demo_app index.")
