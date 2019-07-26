@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url
+from app_demo import views
 
+# url mapping add you url mapping here : \_&(-.<)3_/
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url(r'^hello/$', views.hello),
+    url(r'^msg/(?P<name>\w+)/(?P<age>\d+)/$', views.msg)
 ]
